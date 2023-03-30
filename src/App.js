@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './component/NavBar';
 
 function App() {
   return (
     <>
-    <h1>checking Music app</h1>
+    <NavBar/>
+    <h1>Top News</h1>
     </>
   );
 }
