@@ -1,13 +1,17 @@
 import './App.css';
 import NavBar from './component/NavBar';
 
-function App() {
-  return (
-    <>
-    <NavBar/>
-    <h1>Top News</h1>
-    </>
-  );
+import React, { Component } from 'react'
+import News from './component/News';
+
+export default class App extends Component {
+  render() {
+    return (
+      <>
+      <NavBar/>
+      <News/>
+      </>
+    )
+  }
 }
 
-export default App;
