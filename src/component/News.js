@@ -61,7 +61,10 @@ handleNext=async()=>{
         <div className='row'>
         {this.state.articles.map((element)=>{
             return <div className="col-md-4 my-2"  key={element.url} >
-                <NewsItem title={element.title?element.title:"No Title"} description={element.description?element.description:"No Description"} imageUrl={element.urlToImage}
+                <NewsItem title={element.title?element.title:"No Title"} description={element.description?element.description:"No Description"} 
+                author={element.author}
+                date={element.publishedAt}
+                imageUrl={element.urlToImage}
                 newsUrl={element.url} />
             </div>
 
