@@ -5,11 +5,13 @@ import PropTypes from 'prop-types'
 export default class NewsItem extends Component {
 
     static defaultProps={
-       country:"in"
+       country:"in",
+       category:"general"
     }
 
     static propTypes={
-        country: PropTypes.string
+        country: PropTypes.string,
+        category:PropTypes.string
     }
 
     render() {
