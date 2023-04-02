@@ -1,6 +1,16 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 
 export default class NewsItem extends Component {
+
+    static defaultProps={
+       country:"in"
+    }
+
+    static propTypes={
+        country: PropTypes.string
+    }
 
     render() {
         let {title, description, imageUrl, newsUrl}=this.props;
