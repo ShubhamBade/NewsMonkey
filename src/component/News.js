@@ -57,7 +57,7 @@ handleNext=async()=>{
   render() {
     return (
       <div className='container my-3'>
-        <h2>NewsMonkey - Top headlines</h2>
+        <h2 className='text-center' style={{color:"Blue"}}>NewsMonkey - Top Headlines</h2>
         <div className='row'>
         {this.state.articles.map((element)=>{
             return <div className="col-md-4 my-2"  key={element.url} >
