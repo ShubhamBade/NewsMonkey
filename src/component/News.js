@@ -2,13 +2,11 @@ import React, { Component } from 'react'
 import NewsItem from './NewsItem'
 
 export default class News extends Component {
-
 constructor(){
     super();
     this.state={
         articles:[],
         loading: false
-
     }
 }
 async componentDidMount(){
@@ -53,11 +51,12 @@ handleNext=async()=>{
   })
 }
 }
-
   render() {
+    let temp=this.props.category;
+    let cfl=temp.toUpperCase().charAt(0)+temp.slice(1);
     return (
       <div className='container my-3'>
-        <h2 className='text-center' style={{color:"Blue"}}>NewsMonkey - Top Headlines</h2>
+        <h2 className='text-center' style={{color:"Blue", marginTop: "90px"}}>NewsMonkey - Top Headlines From {cfl} Category</h2>
         <div className='row'>
         {this.state.articles.map((element)=>{
             return <div className="col-md-4 my-2"  key={element.url} >
